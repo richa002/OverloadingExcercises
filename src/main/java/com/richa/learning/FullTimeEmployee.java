@@ -1,6 +1,6 @@
 package com.richa.learning;
 
-public class FullTimeEmployee implements IEmployee {
+public class FullTimeEmployee  implements IEmployee,IEnjoy {
     public void hire() {
         System.out.println("hiring a full time employee");
     }
@@ -15,5 +15,10 @@ public class FullTimeEmployee implements IEmployee {
 
     public String[] benefits() {
         return new String[]{"medical", "bonus","increment"};
+    }
+
+    @Override
+    public void enjoy() {
+        System.out.println("I am enjoying");
     }
 }
